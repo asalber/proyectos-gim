@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Proyectos GIM",
+    "section": "",
+    "text": "¡Bienvenida/os al repositorio de proyectos GIM!\nEste repositorio contiene casos prácticos para desarrollar proyectos en el grado de Ingeniería Matemática."
+  },
+  {
+    "objectID": "index.html#licencia",
+    "href": "index.html#licencia",
+    "title": "Proyectos GIM",
+    "section": "Licencia",
+    "text": "Licencia\nEsta obra está bajo una licencia Reconocimiento – No comercial – Compartir bajo la misma licencia 3.0 España de Creative Commons. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc-sa/3.0/es/.\nCon esta licencia eres libre de:\n\nCopiar, distribuir y mostrar este trabajo.\nRealizar modificaciones de este trabajo.\n\nBajo las siguientes condiciones:\n\nReconocimiento Debe reconocer los créditos de la obra de la manera especificada por el autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo o apoyan el uso que hace de su obra).\nNo comercial No puede utilizar esta obra para fines comerciales.\nCompartir bajo la misma licencia Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.\n\nAl reutilizar o distribuir la obra, tiene que dejar bien claro los términos de la licencia de esta obra.\nEstas condiciones pueden no aplicarse si se obtiene el permiso del titular de los derechos de autor.\nNada en esta licencia menoscaba o restringe los derechos morales del autor."
+  },
+  {
     "objectID": "demanda-electrica.html#introducción",
     "href": "demanda-electrica.html#introducción",
     "title": "1  Demanda eléctrica",
@@ -26,19 +40,5 @@
     "title": "1  Demanda eléctrica",
     "section": "1.4 Datos",
     "text": "1.4 Datos\nPara probar los algoritmos de interpolación y la aplicación, se utilizarán datos de la web Red Eléctrica. Esta web proporciona una API que permite acceder a base de datos de Red Eléctrica y que contiene entre otra mucha información, el histórico de demandas reales."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Proyectos GIM",
-    "section": "",
-    "text": "¡Bienvenida/os al repositorio de proyectos GIM!\nEste repositorio contiene casos prácticos para desarrollar proyectos en el grado de Ingeniería Matemática."
-  },
-  {
-    "objectID": "index.html#licencia",
-    "href": "index.html#licencia",
-    "title": "Proyectos GIM",
-    "section": "Licencia",
-    "text": "Licencia\nEsta obra está bajo una licencia Reconocimiento – No comercial – Compartir bajo la misma licencia 3.0 España de Creative Commons. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc-sa/3.0/es/.\nCon esta licencia eres libre de:\n\nCopiar, distribuir y mostrar este trabajo.\nRealizar modificaciones de este trabajo.\n\nBajo las siguientes condiciones:\n\n**Reconocimiento Debe reconocer los créditos de la obra de la manera especificada por el autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo o apoyan el uso que hace de su obra).\n**No comercial No puede utilizar esta obra para fines comerciales.\n**Compartir bajo la misma licencia Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.\n\nAl reutilizar o distribuir la obra, tiene que dejar bien claro los términos de la licencia de esta obra.\nEstas condiciones pueden no aplicarse si se obtiene el permiso del titular de los derechos de autor.\nNada en esta licencia menoscaba o restringe los derechos morales del autor."
   }
 ]
