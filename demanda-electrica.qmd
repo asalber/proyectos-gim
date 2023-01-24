@@ -1,0 +1,36 @@
+---
+title: Demanda eléctrica
+lang: es
+---
+
+## Introducción 
+
+Las empresas energéticas necesitan predecir la demanda eléctrica de sus clientes para poder dimensionar la producción y hacer una compra de energía en el mercado diario. En este mercado se subasta la oferta de energía para el día siguiente y las compañías comercializadoras pujan para adquirir la potencia que estiman que sus clientes van a demandar en las próximas 24 horas. 
+
+Para las compañías eléctricas comercializadoras es fundamental predecir la curva de demanda de sus clientes, para ajustar la compra de energía a las demandas reales, y para las compañías productoras es igualmente importante predecir la demanda total para dimensionar la producción de energía del día siguiente. Estas predicciones se realizan habitualmente mediante complejos modelos matemáticos que combinan series temporales, procesos estocásticos y aprendizaje automático.
+
+## Objetivos
+
+En este proyecto no se pretende construir modelos predictivos, pero si construir la curva de demanda eléctrica a partir de los consumos reales en momentos puntuales. Es decir, se trata de desarrollar distintos algoritmos de interpolación para ajustar la curva de demanda a una muestra de consumos puntuales. 
+
+Para ello se utilizarán, al menos, los siguientes métodos: 
+
+- Interpolación polinómica:
+    - Algebraica
+    - Método de Newton
+    - Método de Lagrange
+- Interpolación mediante splines:
+    - Splines lineales.
+    - Splines cuadráticos.
+
+## Tareas
+
+1. Investigar los fundamentos matemáticos de los distintos métodos de interpolación.
+2. Programar algoritmos para cada uno de los métodos de interpolación en Python o Julia.
+3. Programar una interfaz para acceder a los datos de demanda eléctrica de mediante la API de Red Eléctrica.
+4. Desarrollar una aplicación en la que el usuario final elija un día y un método de interpolación, y la aplicación le muestre las curva de demanda para ese día interpolada mediante el método seleccionado.
+
+## Datos
+
+Para probar los algoritmos de interpolación y la aplicación, se utilizarán datos de la web [Red Eléctrica](https://www.ree.es/). Esta web proporciona una API que permite acceder a base de datos de Red Eléctrica y que contiene entre otra mucha información, el histórico de demandas reales.
+
