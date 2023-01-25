@@ -32,6 +32,9 @@ book:
   chapters:
     - index.qmd
     - demanda-electrica.qmd
+    - telefonia-movil.qmd
+    - convive.qmd
+    - calculo-simbolico-derivadas.qmd
     
 #bibliography: references.bib
 

@@ -36,5 +36,5 @@ Para ello se utilizarán, al menos, los siguientes métodos:
 
 ## Datos
 
-Para probar los algoritmos de interpolación y la aplicación, se utilizarán datos de la web [Red Eléctrica](https://www.ree.es/). Esta web proporciona una API que permite acceder a base de datos de Red Eléctrica y que contiene entre otra mucha información, el histórico de demandas reales.
+Para probar los algoritmos de interpolación y la aplicación, se utilizarán datos de la web [Red Eléctrica](https://www.ree.es/). Esta web proporciona una [API](https://www.ree.es/es/apidatos) que permite acceder a base de datos de Red Eléctrica y que contiene, entre otra mucha información, el histórico de demandas reales.
 

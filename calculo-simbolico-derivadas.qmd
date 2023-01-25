@@ -1,0 +1,25 @@
+---
+title: Sistema de cálculo simbólico de derivadas
+lang: es
+---
+
+:::{style="text-align:center;"}
+![](img/calculo-simbolico-derivadas/cas.png)
+:::
+
+## Introducción 
+
+Un _sistema de álgebra computacional_ (CAS, del inglés computer algebra system) es un programa de ordenador o calculadora avanzada que facilita el cálculo simbólico. La principal diferencia entre un CAS y una calculadora tradicional es la habilidad del primero para trabajar con ecuaciones y fórmulas simbólicamente, en lugar de numéricamente. Esto permite trabajar con expresiones simbólicas (no numéricas) y realizar operaciones como la resolución de ecuaciones, el cálculo de límites, el cálculo de derivadas o el cálculo de integrales.
+
+## Objetivos
+
+El objetivo de este proyecto es desarrollar un sistema de álgebra computacional para el cálculo simbólico de derivadas.
+
+
+
+## Tareas
+
+1. Definir simbólicamente las derivadas de las funciones elementales.
+
+
+

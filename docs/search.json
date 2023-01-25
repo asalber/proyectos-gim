@@ -39,6 +39,90 @@
     "href": "demanda-electrica.html#datos",
     "title": "1  Demanda eléctrica",
     "section": "1.4 Datos",
-    "text": "1.4 Datos\nPara probar los algoritmos de interpolación y la aplicación, se utilizarán datos de la web Red Eléctrica. Esta web proporciona una API que permite acceder a base de datos de Red Eléctrica y que contiene entre otra mucha información, el histórico de demandas reales."
+    "text": "1.4 Datos\nPara probar los algoritmos de interpolación y la aplicación, se utilizarán datos de la web Red Eléctrica. Esta web proporciona una API que permite acceder a base de datos de Red Eléctrica y que contiene, entre otra mucha información, el histórico de demandas reales."
+  },
+  {
+    "objectID": "telefonia-movil.html#introducción",
+    "href": "telefonia-movil.html#introducción",
+    "title": "2  Envío de mensajes en una red de telefonía móvil",
+    "section": "2.1 Introducción",
+    "text": "2.1 Introducción\nLa telefonía móvil utiliza una red de estaciones y subestaciones de telecomunicación 4G para la transmisión de datos entre dispositivos móviles. Muchas de estas estaciones están interconectadas por fibra y otras se comunican mediante conexiones inalámbricas por radio frecuencias.\nPara que un mensaje llegue de un dispositivo emisor a otro receptor, el mensaje debe recorrer el camino que va de la subestación más próxima al emisor a la más próxima al receptor, pasando, a menudo, por varias estaciones de la red que interconectan las subestaciones de origen y destino. La distancia entre las estaciones y su capacidad de transmisión de datos son claves para que los mensajes lleguen lo más rápidamente posible del dispositivo emisor al receptor."
+  },
+  {
+    "objectID": "telefonia-movil.html#objetivos",
+    "href": "telefonia-movil.html#objetivos",
+    "title": "2  Envío de mensajes en una red de telefonía móvil",
+    "section": "2.2 Objetivos",
+    "text": "2.2 Objetivos\nEn este proyecto se debe desarrollar un algoritmo y una aplicación para buscar el camino óptimo para enviar un mensaje desde un punto geográfico a otro de una ciudad a través del grafo que representa la red de estaciones y subestaciones de telecomunicación de la ciudad.\nLa aplicación recibirá como entrada las coordenadas de los puntos de origen y destino, y el tamaño del mensaje, y debe devolver el camino más rápido para enviar el mensaje del origen al destino, es decir, el orden de las estaciones por las que el mensaje debe pasar, así como el tiempo que el mensaje tardaría en recorrer ese camino. En la búsqueda del camino óptimo debe tenerse en cuenta la distancia entre las subestaciones, así como la capacidad de transmisión de cada una de ellas.\nPara la búsqueda del camino óptimo en el grafo conviene utilizar el famoso algoritmo de Dijkstra o alguna de sus variantes."
+  },
+  {
+    "objectID": "telefonia-movil.html#tareas",
+    "href": "telefonia-movil.html#tareas",
+    "title": "2  Envío de mensajes en una red de telefonía móvil",
+    "section": "2.3 Tareas",
+    "text": "2.3 Tareas\n\nObtener las coordenadas geográficas de la ubicación de las estaciones de telefonía con una frecuencia específica y de un único operador en una determinada ciudad y representar la red en un plano cartesiano. Se puede asumir que las estaciones a menos de \\(x\\) kilómetros de separación están directamente conectadas por fibra.\nConstruir un grafo que represente la red de estaciones de telefonía. Los pesos de las aristas del grafo podrían ser las distancias en línea recta entre las estaciones, pero es mucho más realista es utilizar la velocidad de conexión entre ellas en Mbps, ya que las estaciones base suelen conectarse entre ellas con conexiones inalámbricas. Para ello se puede utilizar la capacidad de Shannon como se explica en este artículo.\nIdentificar en el grafo las estaciones base más cercanas a las coordenadas de los puntos de origen y destino del mensaje.\nImplementar en Python o Julia el algoritmo de Dijkstra o alguna de sus variantes para la búsqueda del camino óptimo.\nDeterminar cuál será la estación base que requiera más atención de mantenimiento, es decir, por la que pasen más mensajes. Para ello, usar la métrica de centralidad correspondiente. O lo que es lo mismo, si hubiera un agente malicioso (a.k.a. man in the middle, o Charlie), ¿dónde se ubicaría para interceptar la mayoría de mensajes.\nDeterminar cuánto tardará como máximo un mensaje en llegar de emisor a receptor. Usar la matriz de distancias tras ejecutar el algoritmo de Dijkstra y calcular el diámetro del grafo."
+  },
+  {
+    "objectID": "telefonia-movil.html#datos",
+    "href": "telefonia-movil.html#datos",
+    "title": "2  Envío de mensajes en una red de telefonía móvil",
+    "section": "2.4 Datos",
+    "text": "2.4 Datos\nPara probar obtener los datos de la ubicación y frecuencia de transmisión de las estaciones de telefonía de una determinada ciudad puede consultarse web del Ministerio de Asuntos Económicos y Transformación Digital o bien esta otra web con el mapa de estaciones de telefonía del Estado español."
+  },
+  {
+    "objectID": "convive.html#introducción",
+    "href": "convive.html#introducción",
+    "title": "3  CONVIVE: Big Data para la ciudad inteligente",
+    "section": "3.1 Introducción",
+    "text": "3.1 Introducción\nLos datos abiertos (open data) es una iniciativa que muchas administraciones públicas están adoptando con el objetivo de mejorar la transparencia en lo que respecta a sus funciones de cara a la ciudadanía.\nEl ayuntamiento de Madrid es uno de los ayuntamientos que ha empezado a ofrecer datos en abierto, y en su portal de datos abiertos puede accederse a multitud de bases de datos con información de todo tipo, desde los alojamientos en la ciudad hasta las mediciones de contaminación de las estaciones de registro de contaminantes.\nLa puesta a disposición de la ciudadanía de toda esta información, no solo mejora la transparencia sobre la gestión municipal, sino que permite a ciudadanos o a empresas particulares poder analizar estos datos para mejorar sus decisiones."
+  },
+  {
+    "objectID": "convive.html#objetivos",
+    "href": "convive.html#objetivos",
+    "title": "3  CONVIVE: Big Data para la ciudad inteligente",
+    "section": "3.2 Objetivos",
+    "text": "3.2 Objetivos\nEl objetivo principal del proyecto CONVIVE es mejorar el conocimiento del estado real de la ciudad a través de la medición de datos de su entorno y de la información aportada por los ciudadanos. Para ello se desplegará toda la infraestructura necesaria para adquirir esa información y tratarla adecuadamente.\nUn objetivo específico del proyecto es que el tratamiento de datos debe realizarse con tecnologías relacionadas con el Big Data. Así nos aseguraremos de que el sistema pueda integrar fuentes de información variadas incluso después de que el sistema haya sido creado."
+  },
+  {
+    "objectID": "convive.html#descripción-técnica",
+    "href": "convive.html#descripción-técnica",
+    "title": "3  CONVIVE: Big Data para la ciudad inteligente",
+    "section": "3.3 Descripción técnica",
+    "text": "3.3 Descripción técnica\nEl sistema a implementar consiste en una plataforma de análisis de varias fuentes de información existentes en el Ayuntamiento de Madrid. Para ello debe solucionar tres aspectos fundamentales:\n\nLa recogida de información de la ciudad. Este sistema incluye datos de dispositivos, de ciudadanos y de entidades.\nLa gestión de los datos recogidos. Debe ser lo suficientemente genérica para gestionar posibles incertidumbres en los datos propias de una ciudad: información incompleta, nuevas fuentes de información, nuevos campos en la misma información, etc.\nEl análisis de los datos almacenados. Los análisis pueden basarse en la combinación de varios conjuntos de datos integrados en el sistema. Es necesario tener en cuenta que estos datos pueden estar en ubicaciones diferentes y pueden tener un tamaño que no permita su adecuado procesamiento en una sola máquina.\n\nEn una ciudad el número de fuentes de información no está fijado ya que en cualquier momento pueden aparecer nuevas fuentes de información a medida que se implanten tecnologías nuevas o formas distintas de participar por parte de los ciudadanos. En el proyecto CONVIVE se definen algunas fuentes de información que deben ser tratadas y se emplean tecnologías que faciliten la integración de nuevas fuentes de información en el futuro. Las fuentes de información que debe gestionar CONVIVE son:\n\nAvisos de incidencias en la vía pública por parte de los ciudadanos. El sistema integrará estos avisos tanto de forma interactiva (para gestionar la incidencia) como de forma procesada (registros de avisos durante un periodo de tiempo).\n\nLos avisos interactivos se almacenarán en un sistema que permita la actualización del estado de los mismos.\nLos avisos procesados suelen corresponder a avisos interactivos que han sido transformados a un formato que facilita su procesamiento estadístico. De esta forma se podrá relacionar estos avisos con otras fuentes estadísticas disponibles en la ciudad.\n\nInformación acústica de la ciudad. El sistema integrará los datos del nivel de ruido existente en distintas partes de la ciudad. Para ello obtendrá la información de ruido en determinadas zonas y los registrará para su posterior análisis.\n\nPara llevar a cabo el proyecto CONVIVE se divide su desarrollo en tres subsistemas distintos que coinciden con los tres aspectos a solucionar previamente comentados.\n\n3.3.1 Subsistema de adquisición de datos\nEn este subsistema de deben solucionar aspectos relacionados con la recogida de la información. Para ello debe desplegar una red de sensores acústicos en la ciudad (encargados del proceso de recogida de información de ruido) y habilitar un sistema de comunicación para los ciudadanos (con el fin de generar avisos de incidencias en la vía pública).\nEn el proyecto CONVIVE tendremos dos tipos de información al finalizar el trabajo en este subsistema:\n\nUna base de datos con información sobre las incidencias reportadas por los ciudadanos. En esta base de datos se almacenan las incidencias activas y cuyo estado se puede actualizar. Como criterio de diseño se almacenarán en una base de datos (no en un fichero) ya que tiene ciertas ventajas para su gestión.\nInformación relacionada con los niveles de ruido. Se recogerá información de los sensores desplegados en la ciudad y se almacenarán en ficheros con formato CSV.\n\n\n\n\nSubsistema de adquisición de datos\n\n\n\n\n3.3.2 Subsistema de gestión de datos\nEn este subsistema de deben solucionar aspectos relacionados con el almacenamiento y sincronización de la información a través de distintas máquinas.\nDado que no se implementará realmente el subsistema de adquisición de datos (aunque sí se llevará a cabo un diseño detallado), se obtendrán datos del sistema AVISA que contiene las incidencias reportadas por los ciudadanos, y del nivel de ruidos del Ayuntamiento de Madrid.\nUna vez que se disponga de todos los datos como ficheros en formato CSV (los datos de AVISA y los de ruido) utilizaremos un sistema que permita distribuirlos a través de varias máquinas y sincronizarlos para facilitar su acceso.\n\n\n\nSubsistema de gestión de datos\n\n\n\n\n3.3.3 Subsistema de análisis de datos\nEn este subsistema se obtiene información útil a partir de todos los datos disponibles. En un sistema real se cruzarían los datos del sistema AVISA, con los de niveles de ruido y con varios datos más para obtener información sintetizada y en muchos casos inferir relaciones entre distintos hechos que estén ocurriendo. En el caso del proyecto CONVIVE, por motivos de claridad a la hora de aprender conceptos, se utilizará únicamente un fichero con los datos del sistema AVISA en formato CSV. Se descartarán tanto los datos de ruido como cualquier otro tipo de fuente de datos que puede obtenerse del Ayuntamiento de Madrid.\nEn el proyecto CONVIVE se realizarán dos acciones con los datos:\n\nSe analizarán los datos existentes del sistema AVISA para obtener información sintetizada de los incidentes reportados. Para ello debe tenerse en cuenta que el fichero con los datos puede estar repartido entre varias máquinas y que se debe utilizar un modelo de programación que facilite el acceso a todos esos datos sin cargar la máquina en la que se ejecute.\nSe visualizarán los datos del sistema AVISA para que sean más fácilmente entendibles por los destinatarios finales. Las decisiones finales sobre las acciones a tomar las llevarán a cabo por personas con distintas capacidades de abstracción y síntesis. Para facilitar esas decisiones se mostrarán los datos mediante modelos visuales que permitan una mejor comprensión de éstos.\n\n\n\n\nSubsistema de análisis de datos"
+  },
+  {
+    "objectID": "convive.html#tareas",
+    "href": "convive.html#tareas",
+    "title": "3  CONVIVE: Big Data para la ciudad inteligente",
+    "section": "3.4 Tareas",
+    "text": "3.4 Tareas\n\nObtener los ficheros de datos del sistema AVISA del Ayuntamiento de Madrid.\nObtener los ficheros de ruido del Ayuntamiento de Madrid.\nCrear el procedimiento de transformación de entradas de la base de datos en ficheros en formato compatible con los del sistema AVISA.\nIncluir todos los ficheros, los del sistema AVISA, los generados a partir de la base de datos y los de ruido, en un sistema de ficheros distribuido.\nPreprocesar el conjunto de datos para prepararlo para el análisis estadístico.\nRealizar un análisis estadístico de las principales variables incluidas en el conjunto de datos.\nCrear gráficos de visualización de los datos correspondientes a las principales variables del conjunto de datos."
+  },
+  {
+    "objectID": "convive.html#datos",
+    "href": "convive.html#datos",
+    "title": "3  CONVIVE: Big Data para la ciudad inteligente",
+    "section": "3.5 Datos",
+    "text": "3.5 Datos\nSe obtendrán ficheros con información del portal de datos abiertos del Ayuntamiento de Madrid. Este portal tiene un catálogo de datos disponibles bajo los principios de la iniciativa Datos Abiertos (Open Data), que impulsa la publicación abierta, regular, reutilizable y autorizada de los datos de carácter público. En concreto se utilizarán los conjuntos de datos siguientes:\n\nDatos del Sistema AVISA. Tiene información de avisos de ciudadanos sobre incidencias en la vía pública. Es un fichero en formato CSV.\nInformación de la contaminación acústica. Es otro fichero en formato CSV."
+  },
+  {
+    "objectID": "calculo-simbolico-derivadas.html#introducción",
+    "href": "calculo-simbolico-derivadas.html#introducción",
+    "title": "4  Sistema de cálculo simbólico de derivadas",
+    "section": "4.1 Introducción",
+    "text": "4.1 Introducción\nUn sistema de álgebra computacional (CAS, del inglés computer algebra system) es un programa de ordenador o calculadora avanzada que facilita el cálculo simbólico. La principal diferencia entre un CAS y una calculadora tradicional es la habilidad del primero para trabajar con ecuaciones y fórmulas simbólicamente, en lugar de numéricamente. Esto permite trabajar con expresiones simbólicas (no numéricas) y realizar operaciones como la resolución de ecuaciones, el cálculo de límites, el cálculo de derivadas o el cálculo de integrales."
+  },
+  {
+    "objectID": "calculo-simbolico-derivadas.html#objetivos",
+    "href": "calculo-simbolico-derivadas.html#objetivos",
+    "title": "4  Sistema de cálculo simbólico de derivadas",
+    "section": "4.2 Objetivos",
+    "text": "4.2 Objetivos\nEl objetivo de este proyecto es desarrollar un sistema de álgebra computacional para el cálculo simbólico de derivadas."
+  },
+  {
+    "objectID": "calculo-simbolico-derivadas.html#tareas",
+    "href": "calculo-simbolico-derivadas.html#tareas",
+    "title": "4  Sistema de cálculo simbólico de derivadas",
+    "section": "4.3 Tareas",
+    "text": "4.3 Tareas\n\nDefinir simbólicamente las derivadas de las funciones elementales."
   }
 ]
