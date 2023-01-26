@@ -1,10 +1,15 @@
 ---
 title: Envío de mensajes en una red de telefonía móvil
+image: /img/telefonia-movil/antenas.jpg
+categories:
+    - Matemática Discreta
+    - Programación
+abstract: "En este proyecto se desarrollará una aplicación para el enrutamiento de mensajes de telefonía móvil en la que habrá que buscar el camino óptimo para enviar un mensaje a través de la red de telefonía móvil de una ciudad."
 lang: es
 ---
 
 :::{style="text-align:center;"}
-![](img/telefonia-movil/antenas.jpg)
+![](/img/telefonia-movil/antenas.jpg)
 :::
 
 ## Introducción 

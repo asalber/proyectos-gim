@@ -1,10 +1,15 @@
 ---
 title: "CONVIVE: Big Data para la ciudad inteligente"
+image: /img/convive/ayuntamiento-madrid.jpg
+categories:
+    - Estadística
+    - Programación
+abstract: "En este proyecto se desarrollará un sistema de big data en el que se analizarán los datos en abierto del sistema AVISA del ayuntamiento de Madrid."
 lang: es
 ---
 
 :::{style="text-align:center;"}
-![](img/convive/ayuntamiento-madrid.jpg)
+![](/img/convive/ayuntamiento-madrid.jpg)
 :::
 
 ## Introducción 
@@ -47,7 +52,7 @@ En el proyecto CONVIVE tendremos dos tipos de información al finalizar el traba
 1. Una base de datos con información sobre las incidencias reportadas por los ciudadanos. En esta base de datos se almacenan las incidencias activas y cuyo estado se puede actualizar. Como criterio de diseño se almacenarán en una base de datos (no en un fichero) ya que tiene ciertas ventajas para su gestión.
 2. Información relacionada con los niveles de ruido. Se recogerá información de los sensores desplegados en la ciudad y se almacenarán en ficheros con formato CSV.
 
-![Subsistema de adquisición de datos](img/convive/subsistema-adquisicion-datos.png)
+![Subsistema de adquisición de datos](/img/convive/subsistema-adquisicion-datos.png)
 
 ### Subsistema de gestión de datos
 
@@ -57,7 +62,7 @@ Dado que no se implementará realmente el subsistema de adquisición de datos (a
 
 Una vez que se disponga de todos los datos como ficheros en formato CSV (los datos de AVISA y los de ruido) utilizaremos un sistema que permita distribuirlos a través de varias máquinas y sincronizarlos para facilitar su acceso.
 
-![Subsistema de gestión de datos](img/convive/subsistema-gestion-datos.png)
+![Subsistema de gestión de datos](/img/convive/subsistema-gestion-datos.png)
 
 ### Subsistema de análisis de datos
 
@@ -69,7 +74,7 @@ En el proyecto CONVIVE se realizarán dos acciones con los datos:
 
 2. Se visualizarán los datos del sistema AVISA para que sean más fácilmente entendibles por los destinatarios finales. Las decisiones finales sobre las acciones a tomar las llevarán a cabo por personas con distintas capacidades de abstracción y síntesis. Para facilitar esas decisiones se mostrarán los datos mediante modelos visuales que permitan una mejor comprensión de éstos.
 
-![Subsistema de análisis de datos](img/convive/subsistema-analisis-datos.png)
+![Subsistema de análisis de datos](/img/convive/subsistema-analisis-datos.png)
 
 ## Tareas
 

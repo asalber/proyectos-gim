@@ -1,14 +1,19 @@
 project:
-  type: book
+  type: website
   output-dir: "docs"
 
 website:
+  title: "Proyectos GIM"
   favicon: img/logos/favicon.ico
   reader-mode: true
-  comments: 
-    hypothesis:
-      theme: clean
-      openSidebar: true
+  navbar: 
+    background: primary
+    search: true
+
+  # comments: 
+  #   hypothesis:
+  #     theme: clean
+  #     openSidebar: true
 
 book:
   title: "Proyectos GIM"
@@ -21,20 +26,20 @@ book:
   sharing: [twitter, linkedin]
   downloads: [pdf, epub]
   favicon: "img/logos/favicon.ico"
-  sidebar:
-    logo: img/logos/aprendeconalf.png
-    tools:
-      - icon: house-fill
-        href: https://aprendeconalf.es
-  open-graph: true
-  twitter-card: 
-    site: "@aprendeconalf"
+  # sidebar:
+  #   logo: img/logos/aprendeconalf.png
+  #   tools:
+  #     - icon: house-fill
+  #       href: https://aprendeconalf.es
+  # open-graph: true
+  # twitter-card: 
+  #   site: "@aprendeconalf"
   chapters:
     - index.qmd
-    - demanda-electrica.qmd
-    - telefonia-movil.qmd
-    - convive.qmd
-    - calculo-simbolico-derivadas.qmd
+    - proyectos/demanda-electrica.qmd
+    - proyectos/telefonia-movil.qmd
+    - proyectos/convive.qmd
+    - proyectos/calculo-simbolico.qmd
     
 #bibliography: references.bib
 
@@ -45,6 +50,7 @@ format:
       dark: darkly
       light: flatly
     html-math-method: mathjax
+    toc: true
   pdf:
     documentclass: scrreport
     papersize: a4

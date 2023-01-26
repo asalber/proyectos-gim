@@ -1,10 +1,16 @@
 ---
 title: Demanda eléctrica
+image: /img/demanda-electrica/torre-electrica.jpg
+categories:
+    - Álgebra
+    - Análisis
+    - Programación
+abstract: "En este proyecto se desarrollará una aplicación para construir la curva de demanda eléctrica diaria del Estado español mediante métodos de interpolación."
 lang: es
 ---
 
 :::{style="text-align:center;"}
-![](img/demanda-electrica/torre-electrica.jpg)
+![](/img/demanda-electrica/torre-electrica.jpg)
 :::
 
 ## Introducción 

@@ -1,5 +1,14 @@
 ---
+title: Proyectos para el Grado de Ingeniería Matemática
+listing: 
+    id: lista-proyectos
+    contents: proyectos
+    type: grid
+    sort: title
+    categories: true
+page-layout: full
 lang: es
+title-block-banner: true
 ---
 
 # Prefacio {.unnumbered}
@@ -7,6 +16,9 @@ lang: es
 ¡Bienvenida/os al repositorio de proyectos GIM!
 
 Este repositorio contiene casos prácticos para desarrollar proyectos en el grado de Ingeniería Matemática.
+
+::: {#lista-proyectos}
+:::
 
 ## Licencia
 
