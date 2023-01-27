@@ -11,11 +11,11 @@ lang: es
 title-block-banner: true
 ---
 
-# Prefacio {.unnumbered}
-
 ¡Bienvenida/os al repositorio de proyectos GIM!
 
-Este repositorio contiene casos prácticos para desarrollar proyectos en el grado de Ingeniería Matemática.
+Este repositorio contiene casos prácticos para desarrollar proyectos en el grado de Ingeniería Matemática que vinculan los conocimientos y las capacidades adquiridas en distintas asignaturas del grado.
+
+## Catálogo de proyectos
 
 ::: {#lista-proyectos}
 :::
