@@ -1,24 +1,59 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Proyectos para el Grado de Ingeniería Matemática",
-    "section": "",
-    "text": "¡Bienvenida/os al repositorio de proyectos GIM!\nEste repositorio contiene casos prácticos para desarrollar proyectos en el grado de Ingeniería Matemática que vinculan los conocimientos y las capacidades adquiridas en distintas asignaturas del grado."
+    "objectID": "proyectos/Análisis de la sequía.html#introducción",
+    "href": "proyectos/Análisis de la sequía.html#introducción",
+    "title": "Análisis de la sequía",
+    "section": "Introducción",
+    "text": "Introducción\nEl cambio climático está provocando cambios muy rápidos en la meteorología de todo el planeta, y en particular en el Estado español. Una de las consecuencias más graves para España es el aumento de la desertificación de muchas regiones.\nPara tomar medidas preventivas o correctoras, es necesario disponer de un análisis fiable del estado hídrico de las distintas regiones, que permita cuantificar en distintos niveles el riesgo de sequía o desertificación al se enfrentan cada una de ellas."
   },
   {
-    "objectID": "index.html#catálogo-de-proyectos",
-    "href": "index.html#catálogo-de-proyectos",
-    "title": "Proyectos para el Grado de Ingeniería Matemática",
-    "section": "Catálogo de proyectos",
-    "text": "Catálogo de proyectos\n\n\n\n\n\n\n\n\n\n\nCONVIVE: Big Data para la ciudad inteligente\n\n\n\nEstadística\n\n\nProgramación\n\n\n\nEn este proyecto se desarrollará un sistema de big data en el que se analizarán los datos en abierto del sistema AVISA del ayuntamiento de Madrid.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDemanda eléctrica\n\n\n\nÁlgebra\n\n\nAnálisis\n\n\nProgramación\n\n\n\nEn este proyecto se desarrollará una aplicación para construir la curva de demanda eléctrica diaria del Estado español mediante métodos de interpolación.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnvío de mensajes en una red de telefonía móvil\n\n\n\nMatemática Discreta\n\n\nProgramación\n\n\n\nEn este proyecto se desarrollará una aplicación para el enrutamiento de mensajes de telefonía móvil en la que habrá que buscar el camino óptimo para enviar un mensaje a…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSistema de cálculo simbólico\n\n\n\nÁlgebra\n\n\nAnálisis\n\n\nProgramación\n\n\n\nEn este proyecto se desarrollará un sistema de álgebra computacional (CAS) para realizar el cálculo simbólico de derivadas, resolución de ecuaciones y simplificación de…\n\n\n\n\n\n\n\n\n\n\n\n\nNo hay resultados"
+    "objectID": "proyectos/Análisis de la sequía.html#objetivos",
+    "href": "proyectos/Análisis de la sequía.html#objetivos",
+    "title": "Análisis de la sequía",
+    "section": "Objetivos",
+    "text": "Objetivos\nEn este proyecto se analizarán por comunidades autónomas las principales variables meteorológicas relacionadas con la sequía, así como sus reservas hídricas, tanto superficiales como subterráneas, y los usos finales del agua.\nPor otro lado, se elaborará un índide de sequía que permitirá cuantificar el riesgo de sequía o desertificación de cada comunidad autónoma."
   },
   {
-    "objectID": "index.html#licencia",
-    "href": "index.html#licencia",
-    "title": "Proyectos para el Grado de Ingeniería Matemática",
-    "section": "Licencia",
-    "text": "Licencia\nEsta obra está bajo una licencia Reconocimiento – No comercial – Compartir bajo la misma licencia 3.0 España de Creative Commons. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc-sa/3.0/es/.\nCon esta licencia eres libre de:\n\nCopiar, distribuir y mostrar este trabajo.\nRealizar modificaciones de este trabajo.\n\nBajo las siguientes condiciones:\n\nReconocimiento Debe reconocer los créditos de la obra de la manera especificada por el autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo o apoyan el uso que hace de su obra).\nNo comercial No puede utilizar esta obra para fines comerciales.\nCompartir bajo la misma licencia Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.\n\nAl reutilizar o distribuir la obra, tiene que dejar bien claro los términos de la licencia de esta obra.\nEstas condiciones pueden no aplicarse si se obtiene el permiso del titular de los derechos de autor.\nNada en esta licencia menoscaba o restringe los derechos morales del autor."
+    "objectID": "proyectos/Análisis de la sequía.html#tareas",
+    "href": "proyectos/Análisis de la sequía.html#tareas",
+    "title": "Análisis de la sequía",
+    "section": "Tareas",
+    "text": "Tareas\n\nObtener datos de las principales variables meteorológicas relacionadas con la sequía, así como de las reservas hídricas de cada comunidad autónoma.\nRealizar un análisis estadístico descriptivo que las variables estudiadas que refleje el estado actual de cada comunidad, así como la evolución que han experimentado estas variables en los últimos años.\nElaborar un índice de sequía, que agregue y resuma la información de las variables más determinantes en la sequía.\nConstruir un modelo matemático y una aplicación para predecir el índice de sequía de una comunidad. La aplicación debe tener en cuenta los datos meteorológicos, hídricos y también los usos del agua, de manera que pueda predecirse el índice de sequía en distintos contextos de usos de agua."
+  },
+  {
+    "objectID": "proyectos/Análisis de la sequía.html#datos",
+    "href": "proyectos/Análisis de la sequía.html#datos",
+    "title": "Análisis de la sequía",
+    "section": "Datos",
+    "text": "Datos\nLos datos meteorológicos de las comunidades autónomas pueden obtenerse de la web de Copernincus.\nLos datos hídricos de las comunidades autónomas pueden obtenerse de la web del monitor de sequía."
+  },
+  {
+    "objectID": "proyectos/demanda-electrica.html#introducción",
+    "href": "proyectos/demanda-electrica.html#introducción",
+    "title": "Demanda eléctrica",
+    "section": "Introducción",
+    "text": "Introducción\nLas empresas energéticas necesitan predecir la demanda eléctrica de sus clientes para poder dimensionar la producción y hacer una compra de energía en el mercado diario. En este mercado se subasta la oferta de energía para el día siguiente y las compañías comercializadoras pujan para adquirir la potencia que estiman que sus clientes van a demandar en las próximas 24 horas.\nPara las compañías eléctricas comercializadoras es fundamental predecir la curva de demanda de sus clientes, para ajustar la compra de energía a las demandas reales, y para las compañías productoras es igualmente importante predecir la demanda total para dimensionar la producción de energía del día siguiente. Estas predicciones se realizan habitualmente mediante complejos modelos matemáticos que combinan series temporales, procesos estocásticos y aprendizaje automático."
+  },
+  {
+    "objectID": "proyectos/demanda-electrica.html#objetivos",
+    "href": "proyectos/demanda-electrica.html#objetivos",
+    "title": "Demanda eléctrica",
+    "section": "Objetivos",
+    "text": "Objetivos\nEn este proyecto no se pretende construir modelos predictivos, pero si construir la curva de demanda eléctrica a partir de los consumos reales en momentos puntuales. Es decir, se trata de desarrollar distintos algoritmos de interpolación para ajustar la curva de demanda a una muestra de consumos puntuales.\nPara ello se utilizarán, al menos, los siguientes métodos:\n\nInterpolación polinómica:\n\nAlgebraica\nMétodo de Newton\nMétodo de Lagrange\n\nInterpolación mediante splines:\n\nSplines lineales.\nSplines cuadráticos."
+  },
+  {
+    "objectID": "proyectos/demanda-electrica.html#tareas",
+    "href": "proyectos/demanda-electrica.html#tareas",
+    "title": "Demanda eléctrica",
+    "section": "Tareas",
+    "text": "Tareas\n\nInvestigar los fundamentos matemáticos de los distintos métodos de interpolación.\nProgramar algoritmos para cada uno de los métodos de interpolación en Python o Julia.\nProgramar una interfaz para acceder a los datos de demanda eléctrica de mediante la API de Red Eléctrica.\nDesarrollar una aplicación en la que el usuario final elija un día y un método de interpolación, y la aplicación le muestre las curva de demanda para ese día interpolada mediante el método seleccionado."
+  },
+  {
+    "objectID": "proyectos/demanda-electrica.html#datos",
+    "href": "proyectos/demanda-electrica.html#datos",
+    "title": "Demanda eléctrica",
+    "section": "Datos",
+    "text": "Datos\nPara probar los algoritmos de interpolación y la aplicación, se utilizarán datos de la web Red Eléctrica. Esta web proporciona una API que permite acceder a base de datos de Red Eléctrica y que contiene, entre otra mucha información, el histórico de demandas reales."
   },
   {
     "objectID": "proyectos/convive.html#introducción",
@@ -56,6 +91,27 @@
     "text": "Datos\nSe obtendrán ficheros con información del portal de datos abiertos del Ayuntamiento de Madrid. Este portal tiene un catálogo de datos disponibles bajo los principios de la iniciativa Datos Abiertos (Open Data), que impulsa la publicación abierta, regular, reutilizable y autorizada de los datos de carácter público. En concreto se utilizarán los conjuntos de datos siguientes:\n\nDatos del Sistema AVISA. Tiene información de avisos de ciudadanos sobre incidencias en la vía pública. Es un fichero en formato CSV.\nInformación de la contaminación acústica. Es otro fichero en formato CSV."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Proyectos para el Grado de Ingeniería Matemática",
+    "section": "",
+    "text": "¡Bienvenida/os al repositorio de proyectos GIM!\nEste repositorio contiene casos prácticos para desarrollar proyectos en el grado de Ingeniería Matemática que vinculan los conocimientos y las capacidades adquiridas en distintas asignaturas del grado."
+  },
+  {
+    "objectID": "index.html#catálogo-de-proyectos",
+    "href": "index.html#catálogo-de-proyectos",
+    "title": "Proyectos para el Grado de Ingeniería Matemática",
+    "section": "Catálogo de proyectos",
+    "text": "Catálogo de proyectos\n\n\n\n\n\n\n\n\n\n\nAnálisis de la sequía\n\n\n\nEstadística\n\n\nProgramación\n\n\n\nEn este proyecto se realizará un análisis de los datos meteorológicos que las comunidades autónomas del estado español para determinar un índice que permita identificar las…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCONVIVE: Big Data para la ciudad inteligente\n\n\n\nEstadística\n\n\nProgramación\n\n\n\nEn este proyecto se desarrollará un sistema de big data en el que se analizarán los datos en abierto del sistema AVISA del ayuntamiento de Madrid.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDemanda eléctrica\n\n\n\nÁlgebra\n\n\nAnálisis\n\n\nProgramación\n\n\n\nEn este proyecto se desarrollará una aplicación para construir la curva de demanda eléctrica diaria del Estado español mediante métodos de interpolación.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnvío de mensajes en una red de telefonía móvil\n\n\n\nMatemática Discreta\n\n\nProgramación\n\n\n\nEn este proyecto se desarrollará una aplicación para el enrutamiento de mensajes de telefonía móvil en la que habrá que buscar el camino óptimo para enviar un mensaje a…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSistema de cálculo simbólico\n\n\n\nÁlgebra\n\n\nAnálisis\n\n\nProgramación\n\n\n\nEn este proyecto se desarrollará un sistema de álgebra computacional (CAS) para realizar el cálculo simbólico de derivadas, resolución de ecuaciones y simplificación de…\n\n\n\n\n\n\n\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "index.html#licencia",
+    "href": "index.html#licencia",
+    "title": "Proyectos para el Grado de Ingeniería Matemática",
+    "section": "Licencia",
+    "text": "Licencia\nEsta obra está bajo una licencia Reconocimiento – No comercial – Compartir bajo la misma licencia 3.0 España de Creative Commons. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc-sa/3.0/es/.\nCon esta licencia eres libre de:\n\nCopiar, distribuir y mostrar este trabajo.\nRealizar modificaciones de este trabajo.\n\nBajo las siguientes condiciones:\n\nReconocimiento Debe reconocer los créditos de la obra de la manera especificada por el autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo o apoyan el uso que hace de su obra).\nNo comercial No puede utilizar esta obra para fines comerciales.\nCompartir bajo la misma licencia Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.\n\nAl reutilizar o distribuir la obra, tiene que dejar bien claro los términos de la licencia de esta obra.\nEstas condiciones pueden no aplicarse si se obtiene el permiso del titular de los derechos de autor.\nNada en esta licencia menoscaba o restringe los derechos morales del autor."
+  },
+  {
     "objectID": "proyectos/telefonia-movil.html#introducción",
     "href": "proyectos/telefonia-movil.html#introducción",
     "title": "Envío de mensajes en una red de telefonía móvil",
@@ -84,34 +140,6 @@
     "text": "Datos\nPara probar obtener los datos de la ubicación y frecuencia de transmisión de las estaciones de telefonía de una determinada ciudad puede consultarse web del Ministerio de Asuntos Económicos y Transformación Digital o bien esta otra web con el mapa de estaciones de telefonía del Estado español."
   },
   {
-    "objectID": "proyectos/demanda-electrica.html#introducción",
-    "href": "proyectos/demanda-electrica.html#introducción",
-    "title": "Demanda eléctrica",
-    "section": "Introducción",
-    "text": "Introducción\nLas empresas energéticas necesitan predecir la demanda eléctrica de sus clientes para poder dimensionar la producción y hacer una compra de energía en el mercado diario. En este mercado se subasta la oferta de energía para el día siguiente y las compañías comercializadoras pujan para adquirir la potencia que estiman que sus clientes van a demandar en las próximas 24 horas.\nPara las compañías eléctricas comercializadoras es fundamental predecir la curva de demanda de sus clientes, para ajustar la compra de energía a las demandas reales, y para las compañías productoras es igualmente importante predecir la demanda total para dimensionar la producción de energía del día siguiente. Estas predicciones se realizan habitualmente mediante complejos modelos matemáticos que combinan series temporales, procesos estocásticos y aprendizaje automático."
-  },
-  {
-    "objectID": "proyectos/demanda-electrica.html#objetivos",
-    "href": "proyectos/demanda-electrica.html#objetivos",
-    "title": "Demanda eléctrica",
-    "section": "Objetivos",
-    "text": "Objetivos\nEn este proyecto no se pretende construir modelos predictivos, pero si construir la curva de demanda eléctrica a partir de los consumos reales en momentos puntuales. Es decir, se trata de desarrollar distintos algoritmos de interpolación para ajustar la curva de demanda a una muestra de consumos puntuales.\nPara ello se utilizarán, al menos, los siguientes métodos:\n\nInterpolación polinómica:\n\nAlgebraica\nMétodo de Newton\nMétodo de Lagrange\n\nInterpolación mediante splines:\n\nSplines lineales.\nSplines cuadráticos."
-  },
-  {
-    "objectID": "proyectos/demanda-electrica.html#tareas",
-    "href": "proyectos/demanda-electrica.html#tareas",
-    "title": "Demanda eléctrica",
-    "section": "Tareas",
-    "text": "Tareas\n\nInvestigar los fundamentos matemáticos de los distintos métodos de interpolación.\nProgramar algoritmos para cada uno de los métodos de interpolación en Python o Julia.\nProgramar una interfaz para acceder a los datos de demanda eléctrica de mediante la API de Red Eléctrica.\nDesarrollar una aplicación en la que el usuario final elija un día y un método de interpolación, y la aplicación le muestre las curva de demanda para ese día interpolada mediante el método seleccionado."
-  },
-  {
-    "objectID": "proyectos/demanda-electrica.html#datos",
-    "href": "proyectos/demanda-electrica.html#datos",
-    "title": "Demanda eléctrica",
-    "section": "Datos",
-    "text": "Datos\nPara probar los algoritmos de interpolación y la aplicación, se utilizarán datos de la web Red Eléctrica. Esta web proporciona una API que permite acceder a base de datos de Red Eléctrica y que contiene, entre otra mucha información, el histórico de demandas reales."
-  },
-  {
     "objectID": "proyectos/calculo-simbolico.html#introducción",
     "href": "proyectos/calculo-simbolico.html#introducción",
     "title": "Sistema de cálculo simbólico",
@@ -130,7 +158,7 @@
     "href": "proyectos/calculo-simbolico.html#descripción-técnica",
     "title": "Sistema de cálculo simbólico",
     "section": "Descripción técnica",
-    "text": "Descripción técnica\nPara manejar expresiones simbólicas los sistemas de álgebra computacional suelen representarlas mediante un árbol en el que las operaciones forman los nodos y los argumentos son las ramas. Por ejemplo, la expresión \\(\\dfrac{\\cos(x+\\pi)}{y^2}\\) se representaría mediante el árbol siguiente\n\n\n\n\nflowchart TB\n  A(\"/\") --> B(\"cos\")\n  A --> C(\"^\")\n  B --> D(\"+\")\n  C --> E((y))\n  C --> F((2))\n  D --> G((x))\n  D --> H((π))\n\n\n\n\n\nÁrbol de la expresión \\(\\dfrac{\\cos(x+\\pi)}{y^2}\\).\n\n\n\nJulia dispone del tipo de datos Expr para las expresiones simbólicas. Para definir un símbolo o una expresión simbólica se utiliza el operador :.\n\nex = :(sin(x+pi))\ntypeof(ex)\n\nExpr\n\n\nLa principal diferencia entre una expresión normal y una expresión simbólica es que esta última no se evalúa.\nA su vez, el paquete de Julia TermInterface proporciona una interfaz genérica para manipular expresiones simbólicas. Las tres principales funciones de este paquete son\n\nistree(ex): Devuelve true si ex es una expresión simbólica y false cuando se trata de un símbolo o un número.\noperation(ex): Devuelve el operador más externo de la expresión simbólica ex, es decir, el operador en la raíz del árbol correspondiente a la expresión.\narguments(ex): Devuelve un vector con los argumentos sobre los que se aplica el operador máx externo de la expresión simbólica ex, es decir, un vector con las expresiones simbólicas correspondientes a cada una de las ramas que salen de la raíz del árbol correspondiente a la expresión. Dependiendo de la longitud de este vector se puede averiguar la aridad del operador, es decir, si es unario, binario o en general \\(n\\)-ario.\n\n\nusing TermInterface\nistree(:(x+2))\n\ntrue\n\n\n\noperation(:(x+2))\n\n:+\n\n\n\narg = arguments(:(x+2))\n\n2-element Vector{Any}:\n  :x\n 2\n\n\n\nisa(arg[1], Symbol)\n\ntrue\n\n\n\nisa(arg[2], Symbol)\n\nfalse"
+    "text": "Descripción técnica\nPara manejar expresiones simbólicas los sistemas de álgebra computacional suelen representarlas mediante un árbol en el que las operaciones forman los nodos y los argumentos son las ramas. Por ejemplo, la expresión \\(\\dfrac{\\cos(x+\\pi)}{y^2}\\) se representaría mediante el árbol siguiente\n\n\n\n\nflowchart TB\n  A(\"/\") --&gt; B(\"cos\")\n  A --&gt; C(\"^\")\n  B --&gt; D(\"+\")\n  C --&gt; E((y))\n  C --&gt; F((2))\n  D --&gt; G((x))\n  D --&gt; H((π))\n\n\nÁrbol de la expresión \\(\\dfrac{\\cos(x+\\pi)}{y^2}\\).\n\n\n\nJulia dispone del tipo de datos Expr para las expresiones simbólicas. Para definir un símbolo o una expresión simbólica se utiliza el operador :.\n\nex = :(sin(x+pi))\ntypeof(ex)\n\nExpr\n\n\nLa principal diferencia entre una expresión normal y una expresión simbólica es que esta última no se evalúa.\nA su vez, el paquete de Julia TermInterface proporciona una interfaz genérica para manipular expresiones simbólicas. Las tres principales funciones de este paquete son\n\nistree(ex): Devuelve true si ex es una expresión simbólica y false cuando se trata de un símbolo o un número.\noperation(ex): Devuelve el operador más externo de la expresión simbólica ex, es decir, el operador en la raíz del árbol correspondiente a la expresión.\narguments(ex): Devuelve un vector con los argumentos sobre los que se aplica el operador máx externo de la expresión simbólica ex, es decir, un vector con las expresiones simbólicas correspondientes a cada una de las ramas que salen de la raíz del árbol correspondiente a la expresión. Dependiendo de la longitud de este vector se puede averiguar la aridad del operador, es decir, si es unario, binario o en general \\(n\\)-ario.\n\n\nusing TermInterface\nistree(:(x+2))\n\ntrue\n\n\n\noperation(:(x+2))\n\n:+\n\n\n\narg = arguments(:(x+2))\n\n2-element Vector{Any}:\n  :x\n 2\n\n\n\nisa(arg[1], Symbol)\n\ntrue\n\n\n\nisa(arg[2], Symbol)\n\nfalse"
   },
   {
     "objectID": "proyectos/calculo-simbolico.html#tareas",

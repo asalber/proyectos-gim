@@ -8,7 +8,6 @@
 ]{scrreport}
 
 \usepackage{amsmath,amssymb}
-\usepackage{lmodern}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
@@ -18,6 +17,10 @@
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else  
+    % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -138,10 +141,6 @@
 \DeclareMathOperator{\Ac}{Ac}
 \DeclareMathOperator{\sen}{sen}
 \makeatletter
-\makeatother
-\makeatletter
-\makeatother
-\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
 \ifdefined\contentsname
@@ -177,16 +176,10 @@
 \newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
 \makeatother
 \makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
-\makeatother
-\makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
-\makeatother
-\makeatletter
-\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
-\makeatother
-\makeatletter
 \makeatother
 \ifLuaTeX
 \usepackage[bidi=basic]{babel}
@@ -200,7 +193,8 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
+
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -243,12 +237,10 @@
 \includegraphics[width=0.1\textwidth]{../img/logos/aprendeconalf.png} & \parbox[b]{5cm}{\Large\textsf{}\\ \textsf{asalber@ceu.es} \\ \textsf{https://aprendeconalf.es}}
 \end{tabular}
 \end{flushleft}
-\end{titlepage}\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, sharp corners, enhanced, frame hidden, boxrule=0pt, interior hidden, breakable]}{\end{tcolorbox}}\fi
-
+\end{titlepage}
 \includegraphics{../img/calculo-simbolico/cas.png}
 
-\hypertarget{introducciuxf3n}{%
-\section{Introducción}\label{introducciuxf3n}}
+\section{Introducción}\label{introducciuxf3n}
 
 Un \emph{sistema de álgebra computacional} (CAS, del inglés computer
 algebra system) es un programa de ordenador o calculadora avanzada que
@@ -259,16 +251,14 @@ Esto permite trabajar con expresiones simbólicas (no numéricas) y
 realizar operaciones como la resolución de ecuaciones, el cálculo de
 límites, el cálculo de derivadas o el cálculo de integrales.
 
-\hypertarget{objetivos}{%
-\section{Objetivos}\label{objetivos}}
+\section{Objetivos}\label{objetivos}
 
 El objetivo de este proyecto es desarrollar un sistema de álgebra
 computacional para el cálculo simbólico que permita el cálculo de
 derivadas, la resolución de ecuaciones y la simplificación de
 expresiones.
 
-\hypertarget{descripciuxf3n-tuxe9cnica}{%
-\section{Descripción técnica}\label{descripciuxf3n-tuxe9cnica}}
+\section{Descripción técnica}\label{descripciuxf3n-tuxe9cnica}
 
 Para manejar expresiones simbólicas los sistemas de álgebra
 computacional suelen representarlas mediante un árbol en el que las
@@ -276,14 +266,8 @@ operaciones forman los nodos y los argumentos son las ramas. Por
 ejemplo, la expresión \(\dfrac{\cos(x+\pi)}{y^2}\) se representaría
 mediante el árbol siguiente
 
-\hypertarget{arbol-expresion}{}
-\begin{figure}[H]
-
-{\centering \includegraphics[width=2.37in,height=3.06in]{calculo-simbolico_files/figure-latex/mermaid-figure-1.png}
-
-}
-
-\end{figure}
+\phantomsection\label{arbol-expresion}
+\includegraphics[width=2.37in,height=3.03in]{calculo-simbolico_files/figure-latex/mermaid-figure-1.png}
 
 Árbol de la expresión \(\dfrac{\cos(x+\pi)}{y^2}\).
 
@@ -382,8 +366,7 @@ true
 false
 \end{verbatim}
 
-\hypertarget{tareas}{%
-\section{Tareas}\label{tareas}}
+\section{Tareas}\label{tareas}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
