@@ -2,8 +2,9 @@
   {
     "listing": "/index.html",
     "items": [
-      "/proyectos/Análisis de la sequía.html",
+      "/proyectos/analisis-sequia.html",
       "/proyectos/convive.html",
+      "/proyectos/clasificador-bibliografico.html",
       "/proyectos/demanda-electrica.html",
       "/proyectos/telefonia-movil.html",
       "/proyectos/calculo-simbolico.html"

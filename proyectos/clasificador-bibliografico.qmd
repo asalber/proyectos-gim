@@ -1,0 +1,43 @@
+---
+title: Clasificador biblográfico
+image: /img/clasificador-bibliografico/bibliografia.jpg
+categories:
+    - Álgebra
+    - Matemática Discreta
+    - Programación
+abstract: "En este proyecto se construirá un clasificador de referencias bibliográficas usando el famoso algoritmo PageRank de Google."
+lang: es
+---
+
+:::{style="text-align:center;"}
+![](/img/clasificador-bibliografico/bibliografia.jpg)
+:::
+
+## Introducción 
+
+Desde su creación, el motor de búsqueda de Google se ha convertido en una herramienta indispensable en la vida de todos nosotros, imponiéndose a todos los demás buscadores gracias a su fiabilidad a la hora de mostrar los resultados más relevantes.
+
+La clave de este éxito está en su célebre algoritmo PageRank, el cual combina la teoría de grafos y el álgebra lineal para clasificar las páginas web en función de su importancia.
+
+Por supuesto, la utilidad de este algoritmo va más allá de clasificar páginas web, y puede ser empleado para clasificar bibliografías en distintos contextos o en general para clasificar la importancia de los nodos de una cierta red, como por ejemplo los aeropuertos de una región o las estaciones de tren de la red ferroviaria de un país.
+
+## Objetivos
+
+El objetivo de este proyecto es crear una aplicación que clasifique mediante el algoritmo PageRank una base de datos bibliográfica.
+
+## Tareas
+
+1.  Estudiar en detalle y familiarizarse con el algoritmo PageRank de Google.
+
+1.  Programar en Julia o Python el algoritmo PageRank.
+
+1.  Usar el programa anterior para crear una aplicación de clasificación de bibliografía en la que el usuario introduzca una base de datos de referencias bibliográficas junto con la información de las citas que se dan entre ellas y devuelva una lista con las referencias ordenadas en función de su relevancia.
+
+4.  Usar esta aplicación para clasificar la bibliografía (tanto en español como en inglés) de alguna de las asignaturas del grado.
+
+## Datos
+
+Para familiarizarse con el algoritmo PageRank proponemos el artículo [El secreto de Google y el Álgebra Lineal](https://sctmates.webs.ull.es/modulo1lp/8/pfernandez.pdf).
+
+Para consultar las citas de un libro o artículo puede ser de ayuda [Google Scholar](https://scholar.google.es/).
+
