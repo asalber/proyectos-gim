@@ -141,6 +141,10 @@
 \DeclareMathOperator{\Ac}{Ac}
 \DeclareMathOperator{\sen}{sen}
 \makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
 \ifdefined\contentsname
@@ -176,10 +180,18 @@
 \newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
 \makeatother
 \makeatletter
-\makeatother
-\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
 \makeatother
 \ifLuaTeX
 \usepackage[bidi=basic]{babel}
@@ -193,8 +205,7 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage{bookmark}
-
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -237,10 +248,12 @@
 \includegraphics[width=0.1\textwidth]{../img/logos/aprendeconalf.png} & \parbox[b]{5cm}{\Large\textsf{}\\ \textsf{asalber@ceu.es} \\ \textsf{https://aprendeconalf.es}}
 \end{tabular}
 \end{flushleft}
-\end{titlepage}
+\end{titlepage}\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[interior hidden, frame hidden, borderline west={3pt}{0pt}{shadecolor}, boxrule=0pt, breakable, sharp corners, enhanced]}{\end{tcolorbox}}\fi
+
 \includegraphics{../img/calculo-simbolico/cas.png}
 
-\section{Introducción}\label{introducciuxf3n}
+\hypertarget{introducciuxf3n}{%
+\section{Introducción}\label{introducciuxf3n}}
 
 Un \emph{sistema de álgebra computacional} (CAS, del inglés computer
 algebra system) es un programa de ordenador o calculadora avanzada que
@@ -251,14 +264,16 @@ Esto permite trabajar con expresiones simbólicas (no numéricas) y
 realizar operaciones como la resolución de ecuaciones, el cálculo de
 límites, el cálculo de derivadas o el cálculo de integrales.
 
-\section{Objetivos}\label{objetivos}
+\hypertarget{objetivos}{%
+\section{Objetivos}\label{objetivos}}
 
 El objetivo de este proyecto es desarrollar un sistema de álgebra
 computacional para el cálculo simbólico que permita el cálculo de
 derivadas, la resolución de ecuaciones y la simplificación de
 expresiones.
 
-\section{Descripción técnica}\label{descripciuxf3n-tuxe9cnica}
+\hypertarget{descripciuxf3n-tuxe9cnica}{%
+\section{Descripción técnica}\label{descripciuxf3n-tuxe9cnica}}
 
 Para manejar expresiones simbólicas los sistemas de álgebra
 computacional suelen representarlas mediante un árbol en el que las
@@ -266,8 +281,14 @@ operaciones forman los nodos y los argumentos son las ramas. Por
 ejemplo, la expresión \(\dfrac{\cos(x+\pi)}{y^2}\) se representaría
 mediante el árbol siguiente
 
-\phantomsection\label{arbol-expresion}
-\includegraphics[width=2.37in,height=3.03in]{calculo-simbolico_files/figure-latex/mermaid-figure-1.png}
+\hypertarget{arbol-expresion}{}
+\begin{figure}[H]
+
+{\centering \includegraphics[width=2.37in,height=3.03in]{calculo-simbolico_files/figure-latex/mermaid-figure-1.png}
+
+}
+
+\end{figure}
 
 Árbol de la expresión \(\dfrac{\cos(x+\pi)}{y^2}\).
 
@@ -296,7 +317,7 @@ principales funciones de este paquete son
 \begin{itemize}
 \tightlist
 \item
-  \texttt{istree(ex)}: Devuelve \texttt{true} si \texttt{ex} es una
+  \texttt{isexpr(ex)}: Devuelve \texttt{true} si \texttt{ex} es una
   expresión simbólica y \texttt{false} cuando se trata de un símbolo o
   un número.
 \item
@@ -316,7 +337,7 @@ principales funciones de este paquete son
 \begin{Shaded}
 \begin{Highlighting}[]
 \ImportTok{using} \BuiltInTok{TermInterface}
-\FunctionTok{istree}\NormalTok{(}\OperatorTok{:}\NormalTok{(x}\OperatorTok{+}\FloatTok{2}\NormalTok{))}
+\FunctionTok{isexpr}\NormalTok{(}\OperatorTok{:}\NormalTok{(x}\OperatorTok{+}\FloatTok{2}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
 
@@ -341,7 +362,7 @@ true
 \end{Shaded}
 
 \begin{verbatim}
-2-element Vector{Any}:
+2-element view(::Vector{Any}, 2:3) with eltype Any:
   :x
  2
 \end{verbatim}
@@ -366,7 +387,8 @@ true
 false
 \end{verbatim}
 
-\section{Tareas}\label{tareas}
+\hypertarget{tareas}{%
+\section{Tareas}\label{tareas}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}

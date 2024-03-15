@@ -40,6 +40,9 @@ book:
     - proyectos/telefonia-movil.qmd
     - proyectos/convive.qmd
     - proyectos/calculo-simbolico.qmd
+    - proyectos/analisis-sequia.qmd
+    - proyectos/clasificador-bibliografico.qmd
+    - proyectos/glaucoma.qmd
     
 #bibliography: references.bib
 

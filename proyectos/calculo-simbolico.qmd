@@ -49,14 +49,14 @@ La principal diferencia entre una expresión normal y una expresión simbólica 
 
 A su vez, el paquete de Julia `TermInterface` proporciona una interfaz genérica para manipular expresiones simbólicas. Las tres principales funciones de este paquete son
 
-- `istree(ex)`: Devuelve `true` si `ex` es una expresión simbólica y `false` cuando se trata de un símbolo o un número.
+- `isexpr(ex)`: Devuelve `true` si `ex` es una expresión simbólica y `false` cuando se trata de un símbolo o un número.
 - `operation(ex)`: Devuelve el operador más externo de la expresión simbólica `ex`, es decir, el operador en la raíz del árbol correspondiente a la expresión.
 - `arguments(ex)`: Devuelve un vector con los argumentos sobre los que se aplica el operador máx externo de la expresión simbólica `ex`, es decir, un vector con las expresiones simbólicas correspondientes a cada una de las ramas que salen de la raíz del árbol correspondiente a la expresión. Dependiendo de la longitud de este vector se puede averiguar la aridad del operador, es decir, si es unario, binario o en general $n$-ario.
 
 
 ```{julia}
 using TermInterface
-istree(:(x+2))
+isexpr(:(x+2))
 ```
 
 ```{julia}

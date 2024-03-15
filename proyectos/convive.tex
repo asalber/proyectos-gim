@@ -101,6 +101,10 @@
 \DeclareMathOperator{\Ac}{Ac}
 \DeclareMathOperator{\sen}{sen}
 \makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
 \ifdefined\contentsname
@@ -136,10 +140,18 @@
 \newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
 \makeatother
 \makeatletter
-\makeatother
-\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
 \makeatother
 \ifLuaTeX
 \usepackage[bidi=basic]{babel}
@@ -153,8 +165,7 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage{bookmark}
-
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -197,10 +208,12 @@
 \includegraphics[width=0.1\textwidth]{../img/logos/aprendeconalf.png} & \parbox[b]{5cm}{\Large\textsf{}\\ \textsf{asalber@ceu.es} \\ \textsf{https://aprendeconalf.es}}
 \end{tabular}
 \end{flushleft}
-\end{titlepage}
+\end{titlepage}\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden, frame hidden, boxrule=0pt, breakable, sharp corners]}{\end{tcolorbox}}\fi
+
 \includegraphics{../img/convive/ayuntamiento-madrid.jpg}
 
-\section{Introducción}\label{introducciuxf3n}
+\hypertarget{introducciuxf3n}{%
+\section{Introducción}\label{introducciuxf3n}}
 
 Los datos abiertos (open data) es una iniciativa que muchas
 administraciones públicas están adoptando con el objetivo de mejorar la
@@ -218,7 +231,8 @@ solo mejora la transparencia sobre la gestión municipal, sino que
 permite a ciudadanos o a empresas particulares poder analizar estos
 datos para mejorar sus decisiones.
 
-\section{Objetivos}\label{objetivos}
+\hypertarget{objetivos}{%
+\section{Objetivos}\label{objetivos}}
 
 El objetivo principal del proyecto CONVIVE es mejorar el conocimiento
 del estado real de la ciudad a través de la medición de datos de su
@@ -231,7 +245,8 @@ realizarse con tecnologías relacionadas con el Big Data. Así nos
 aseguraremos de que el sistema pueda integrar fuentes de información
 variadas incluso después de que el sistema haya sido creado.
 
-\section{Descripción técnica}\label{descripciuxf3n-tuxe9cnica}
+\hypertarget{descripciuxf3n-tuxe9cnica}{%
+\section{Descripción técnica}\label{descripciuxf3n-tuxe9cnica}}
 
 El sistema a implementar consiste en una plataforma de análisis de
 varias fuentes de información existentes en el Ayuntamiento de Madrid.
@@ -295,8 +310,9 @@ Para llevar a cabo el proyecto CONVIVE se divide su desarrollo en tres
 subsistemas distintos que coinciden con los tres aspectos a solucionar
 previamente comentados.
 
+\hypertarget{subsistema-de-adquisiciuxf3n-de-datos}{%
 \subsection{Subsistema de adquisición de
-datos}\label{subsistema-de-adquisiciuxf3n-de-datos}
+datos}\label{subsistema-de-adquisiciuxf3n-de-datos}}
 
 En este subsistema de deben solucionar aspectos relacionados con la
 recogida de la información. Para ello debe desplegar una red de sensores
@@ -323,7 +339,7 @@ el trabajo en este subsistema:
   en ficheros con formato CSV.
 \end{enumerate}
 
-\begin{figure}[H]
+\begin{figure}
 
 {\centering \includegraphics{../img/convive/subsistema-adquisicion-datos.png}
 
@@ -331,10 +347,11 @@ el trabajo en este subsistema:
 
 \caption{Subsistema de adquisición de datos}
 
-\end{figure}%
+\end{figure}
 
+\hypertarget{subsistema-de-gestiuxf3n-de-datos}{%
 \subsection{Subsistema de gestión de
-datos}\label{subsistema-de-gestiuxf3n-de-datos}
+datos}\label{subsistema-de-gestiuxf3n-de-datos}}
 
 En este subsistema de deben solucionar aspectos relacionados con el
 almacenamiento y sincronización de la información a través de distintas
@@ -350,7 +367,7 @@ Una vez que se disponga de todos los datos como ficheros en formato CSV
 distribuirlos a través de varias máquinas y sincronizarlos para
 facilitar su acceso.
 
-\begin{figure}[H]
+\begin{figure}
 
 {\centering \includegraphics{../img/convive/subsistema-gestion-datos.png}
 
@@ -358,10 +375,11 @@ facilitar su acceso.
 
 \caption{Subsistema de gestión de datos}
 
-\end{figure}%
+\end{figure}
 
+\hypertarget{subsistema-de-anuxe1lisis-de-datos}{%
 \subsection{Subsistema de análisis de
-datos}\label{subsistema-de-anuxe1lisis-de-datos}
+datos}\label{subsistema-de-anuxe1lisis-de-datos}}
 
 En este subsistema se obtiene información útil a partir de todos los
 datos disponibles. En un sistema real se cruzarían los datos del sistema
@@ -393,7 +411,7 @@ En el proyecto CONVIVE se realizarán dos acciones con los datos:
   permitan una mejor comprensión de éstos.
 \end{enumerate}
 
-\begin{figure}[H]
+\begin{figure}
 
 {\centering \includegraphics{../img/convive/subsistema-analisis-datos.png}
 
@@ -401,9 +419,10 @@ En el proyecto CONVIVE se realizarán dos acciones con los datos:
 
 \caption{Subsistema de análisis de datos}
 
-\end{figure}%
+\end{figure}
 
-\section{Tareas}\label{tareas}
+\hypertarget{tareas}{%
+\section{Tareas}\label{tareas}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -431,7 +450,8 @@ En el proyecto CONVIVE se realizarán dos acciones con los datos:
   principales variables del conjunto de datos.
 \end{enumerate}
 
-\section{Datos}\label{datos}
+\hypertarget{datos}{%
+\section{Datos}\label{datos}}
 
 Se obtendrán ficheros con información del
 \href{http://datos.madrid.es/portal/site/egob}{portal de datos abiertos

@@ -101,6 +101,10 @@
 \DeclareMathOperator{\Ac}{Ac}
 \DeclareMathOperator{\sen}{sen}
 \makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
 \ifdefined\contentsname
@@ -136,10 +140,18 @@
 \newcommand*\listoflistings{\listof{codelisting}{Listado de Listados}}
 \makeatother
 \makeatletter
-\makeatother
-\makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
 \makeatother
 \ifLuaTeX
 \usepackage[bidi=basic]{babel}
@@ -153,8 +165,7 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage{bookmark}
-
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
 \hypersetup{
@@ -197,10 +208,12 @@
 \includegraphics[width=0.1\textwidth]{../img/logos/aprendeconalf.png} & \parbox[b]{5cm}{\Large\textsf{}\\ \textsf{asalber@ceu.es} \\ \textsf{https://aprendeconalf.es}}
 \end{tabular}
 \end{flushleft}
-\end{titlepage}
+\end{titlepage}\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[frame hidden, boxrule=0pt, sharp corners, breakable, borderline west={3pt}{0pt}{shadecolor}, enhanced, interior hidden]}{\end{tcolorbox}}\fi
+
 \includegraphics{../img/sequia/sequia.jpg}
 
-\section{Introducción}\label{introducciuxf3n}
+\hypertarget{introducciuxf3n}{%
+\section{Introducción}\label{introducciuxf3n}}
 
 El cambio climático está provocando cambios muy rápidos en la
 meteorología de todo el planeta, y en particular en el Estado español.
@@ -212,7 +225,8 @@ un análisis fiable del estado hídrico de las distintas regiones, que
 permita cuantificar en distintos niveles el riesgo de sequía o
 desertificación al se enfrentan cada una de ellas.
 
-\section{Objetivos}\label{objetivos}
+\hypertarget{objetivos}{%
+\section{Objetivos}\label{objetivos}}
 
 En este proyecto se analizarán por comunidades autónomas las principales
 variables meteorológicas relacionadas con la sequía, así como sus
@@ -223,7 +237,8 @@ Por otro lado, se elaborará un \emph{índide de sequía} que permitirá
 cuantificar el riesgo de sequía o desertificación de cada comunidad
 autónoma.
 
-\section{Tareas}\label{tareas}
+\hypertarget{tareas}{%
+\section{Tareas}\label{tareas}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -246,7 +261,8 @@ autónoma.
   de usos de agua.
 \end{enumerate}
 
-\section{Datos}\label{datos}
+\hypertarget{datos}{%
+\section{Datos}\label{datos}}
 
 Los datos meteorológicos de las comunidades autónomas pueden obtenerse
 de la web de

@@ -1,0 +1,56 @@
+---
+title: Diagnóstico del Glaucoma
+image: /img/glaucoma/oct.jpg
+categories:
+    - Análisis de datos
+    - Estadística 
+    - Programación
+abstract: "En este proyecto se desarrollará un sistema de diagnóstico del glaucoma basado en el análisis de imágenes de la retina."
+lang: es
+---
+
+:::{style="text-align:center;"}
+![](/img/glaucoma/oct.jpg)
+:::
+
+## Introducción 
+
+El [glaucoma](https://es.wikipedia.org/wiki/Glaucoma) es una enfermedad ocular degenerativa que afecta al nervio óptico y es una de las principales causas de ceguera en el mundo. El diagnóstico temprano del glaucoma es fundamental para evitar la pérdida de visión. En este proyecto se desarrollará un sistema de diagnóstico del glaucoma basado en el análisis de imágenes de la retina.
+
+## Objetivos
+
+El objetivo de este proyecto es desarrollar un sistema de diagnostico del glaucoma basado en el análisis de imágenes de las distintas capas de la retina obtenidas mediante una [tomografía de coherencia óptica](https://es.wikipedia.org/wiki/Tomograf%C3%ADa_de_coherencia_%C3%B3ptica) (oct). El sistema debe ser capaz no solo de detectar la presencia del glaucoma, sino también de cuantificar su grado de avance, clasificando cada ojo en distintos estadios de la enfermedad.
+
+## Descripción técnica
+
+La tomografía de coherencia óptica (oct) es una técnica de imagen médica que permite obtener imágenes de alta resolución de la retina. En el caso del glaucoma, la oct permite visualizar el nervio óptico y las distintas capas de la retina, lo que permite detectar la presencia de daño en el nervio óptico y cuantificar su grado de avance. 
+
+A partir de la oct se obtiene el grosor de la capa de fibras nerviosas de la retina (RNFL) en distintos anillos de la mácula:
+
+  - BMO: Apertura de la membrana de Bruch por la que el nervio óptico abandona el globo ocular.
+  - RIM 3.5: Anillo de 3.5 mm de diámetro centrado en el disco óptico.
+  - RIM 4.1: Anillo de 4.1 mm de diámetro centrado en el disco óptico.
+  - RIM 4.7: Anillo de 4.7 mm de diámetro centrado en el disco óptico.
+  
+Cada anillo se divide en 6 cuadrantes:
+
+  - Nasal superior
+  - Nasal
+  - Nasal inferior
+  - Temporal inferior
+  - Temporal
+  - Temporal superior
+
+y para cada cuadrante se mide el grosor de la capa de fibras nerviosas de la retina en micras.
+  
+## Tareas
+
+1. Realizar el preprocesamiento de los datos.
+1. Realizar un análisis descriptivo de los datos de la muestra.
+1. Investigar los distintos métodos estadísticos de clasificación supervisados y no supervisados y seleccionar aquellos que sean más adecuados para este problema de diagnóstico.
+1. Crear un modelo de clasificación que permita detectar la presencia del glaucoma y cuantificar su grado de avance.
+4. Desarrollar una aplicación que determine el estadio de glaucoma de un ojo a partir de los datos de una oct.
+
+## Datos 
+
+Para el proyecto se utilizará la base de datos [`glaucoma.csv`](datos/glaucoma.csv). Esta base de datos contiene las mediciones del grosor de los distintos anillos y sectores de la capa de fibras nerviosas de la retina obtenidas mediante oct. La base de datos incluye además el sexo, la edad y el diagnóstico de glaucoma de cada paciente.
