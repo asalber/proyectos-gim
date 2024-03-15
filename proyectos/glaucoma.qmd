@@ -53,4 +53,4 @@ y para cada cuadrante se mide el grosor de la capa de fibras nerviosas de la ret
 
 ## Datos 
 
-Para el proyecto se utilizará la base de datos [`glaucoma.csv`](datos/glaucoma.csv). Esta base de datos contiene las mediciones del grosor de los distintos anillos y sectores de la capa de fibras nerviosas de la retina obtenidas mediante oct. La base de datos incluye además el sexo, la edad y el diagnóstico de glaucoma de cada paciente.
+Para el proyecto se utilizará la base de datos [`glaucoma.csv`](/datos/glaucoma.csv). Esta base de datos contiene las mediciones del grosor de los distintos anillos y sectores de la capa de fibras nerviosas de la retina obtenidas mediante oct. La base de datos incluye además el sexo, la edad y el diagnóstico de glaucoma de cada paciente.
